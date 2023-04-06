@@ -18,10 +18,8 @@ print("sleeping" + str(function_a(7)))
 #기본값이 있을 경우 17행처럼 편함
 def sum(a, b):
     return(a + b)
-
 print(sum(7, 8))
 
 def sum(a, b = 0):
     return(a + b)
-
 print(sum(7))
