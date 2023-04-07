@@ -24,3 +24,35 @@ print(type(print)) #class 'builtin_function_or_method'
 #지정연산자 = 오른쪽에 있는 값을 왼쪽 변수에 넣으라는 의미(결론: x의 값을 1늘려준 것)
 x = 7
 x = 7 + 1
+
+#return문 효과 하나 더: 함수 즉시 종료: return 뒤에 뭔가를 더 쓰는 건 의미없는일
+def square(x):
+    print("함수 시작")
+    return x * x
+
+print(square(3))
+print("Hello World!")
+
+# 다음 두 줄은 같습니다(x +=1의 경우에 x가 1만큼 더해진다)
+x = x + 1
+x += 1
+
+# 다음 두 줄은 같습니다
+x = x + 2
+x += 2
+
+# 다음 두 줄은 같습니다
+x = x * 2
+x *= 2
+
+# 다음 두 줄은 같습니다
+x = x - 3
+x -= 3
+
+# 다음 두 줄은 같습니다
+x = x / 2
+x /= 2
+
+# 다음 두 줄은 같습니다
+x = x % 7
+x %= 7
